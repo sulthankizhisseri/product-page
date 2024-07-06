@@ -1,0 +1,156 @@
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.hero {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hero h1 {
+    color: #272f43;
+    margin: 0;
+}
+
+.breadcrumb {
+    margin-top: 10px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 5px;
+}
+
+.breadcrumb a:after {
+    content: '/';
+    margin-left: 5px;
+}
+
+.breadcrumb a:last-child:after {
+    content: '';
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #272f43;
+}
+
+.categories, .subcategories {
+    list-style: none;
+    padding: 0;
+}
+
+.categories > li {
+    margin-bottom: 10px;
+}
+
+.subcategories {
+    display: none;
+    margin-left: 20px;
+}
+
+.products {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 1.1em;
+    color: #272f43;
+}
+
+.product-card button {
+    background-color: #272f43;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #272f43;
+    padding: 5px 10px;
+    border: 1px solid #272f43;
+    margin: 0 5px;
+}
+
+.pagination a:hover {
+    background-color: #272f43;
+    color: #fff;
+}
+
+/* Add styles for product details page as needed */
+
+.product-details {
+    padding: 20px;
+}
+
+.product-details .image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-details .image-gallery img {
+    width: 30%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.product-details .description {
+    margin-bottom: 20px;
+}
+
+.product-details .product-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-details .product-details-item {
+    text-align: center;
+}
+
+.product-details .product-details-item img {
+    max-width: 100%;
+    height: auto;
+}
